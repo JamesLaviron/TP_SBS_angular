@@ -40,7 +40,7 @@ return content;
 function slidCreation(title,txt){
 // TODO
 var id = generateUUID();
-var contentMap = [];
+var contentMap = {};
 var slid ={
 	"id": id,
 	"title": title,
