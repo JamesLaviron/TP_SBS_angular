@@ -22,6 +22,18 @@ function eventCtrlFnc($scope,$log,factory){
 		presentation.slidArray.push(slid);
 		$scope.currentPresentation = presentation;
 
+	};
+
+	$scope.selectCurrentSlid=function(slide){
+		$scope.currentSlide = slide;
+		$scope.showme = true;
+	};
+
+	$scope.isSlidContentEmpty=function(slid){
+		if(slid.contentMap[1]== undefined){
+			return true;
+		}
+		return false
 	}
 
 	$scope.selectCurrentSlid=function(slid){
