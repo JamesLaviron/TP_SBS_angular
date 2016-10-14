@@ -4,9 +4,11 @@ eventCtrlFnc.$inject=['$scope','$log','factory'];
 function eventCtrlFnc($scope,$log,factory){
 
 	var presentation = factory.presentationCreation("prestTitle", "presDescr");
+	// var ShowSlid = false;
+	// $scope.ShowCurrentSlid = ShowSlid;
 	// $scope.currentPresentation = [];
 	// $scope.currentPresentation.slid = [];
-
+	$scope.ShowCurrentSlid = false;
 
 	$scope.newSlid = function(){
 		var content = factory.contentCreation("contentTitle","image","images/mini.jpg");
@@ -23,6 +25,7 @@ function eventCtrlFnc($scope,$log,factory){
 	}
 
 	$scope.selectCurrentSlid=function(slid){
+		$scope.ShowCurrentSlid = true;
 		$scope.currentSlid=slid;
 	}
 	$scope.isSlidContentEmpty=function(slid){

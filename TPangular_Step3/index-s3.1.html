@@ -5,10 +5,10 @@
 	<!-- Bootstrap -->
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/bootstrap-theme.min.css">
-<!-- 		<link rel="stylesheet" href="css/bootstrap.css">
- -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+
 	
-	<!-- <link href="css/js.css" rel="stylesheet"> -->
+	<link href="css/js.css" rel="stylesheet">
 </head>
 <body>
 	<div class="container-fluid fullScreenHeight zeroRef" >
@@ -43,15 +43,15 @@
 					</div>
 						<!-- *************
 						CENTER PANEL *************-->
-						<div class="col-xs-7 col-sm-7 col-md-7 col-lg-7 zeroReffullScreenHeight">
+						<div class="col-xs-7 col-sm-7 col-md-7 col-lg-7 zeroReffullScreenHeight" ng-show = "ShowCurrentSlid">
 						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-								<label for="title">{{currentSlid.title}}</label>
-								<input type="text" placeholder="Title" ng-model="currentSlid.title" class="form-control" id="title">
+								<label for="title" >Title</label>
+								<input type="text" placeholder="Title" ng-model="currentSlid.title" class="form-control" id="title" >
 						</div>
 						<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 fullScreenHeight" >
 							<div class="form-group" >
-								<label for="txt">{{currentSlid.txt}}</label>
-								<textarea type="text" placeholder="Text" ng-model="currentSlid.txt" ng-show=class="form-control" id="txt"></textarea>
+								<label for="txt">Text</label>
+								<textarea type="text" placeholder="Text" ng-model="currentSlid.txt" class="form-control" id="txt"></textarea>
 							</div>
 							<img ng-src="{{currentSlid.contentMap.src}}" id="currentSlid">
 						</div>
@@ -61,7 +61,6 @@
 					<script src="lib/js/angular.min.js"></script>
 					<script src="lib/js/bootstrap.min.js"></script>
 					<script src="lib/js/bootstrap.js"></script>
-					<script src="lib/js/npm.js"></script>
 					<script src="js/services/FactoryService-s3.1.js"></script>
 					<script src="js/application/AdminApp-s3.1.js"></script>
 					<script src="js/controllers/EventController-s3.1.js"></script>
